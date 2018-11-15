@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainViewModel.cs](./CS/CustomAppointmentBackground/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/CustomAppointmentBackground/MainViewModel.vb))
+* [MainWindow.xaml](./CS/CustomAppointmentBackground/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/CustomAppointmentBackground/MainWindow.xaml.vb))
+* [MainWindow.xaml.cs](./CS/CustomAppointmentBackground/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/CustomAppointmentBackground/MainWindow.xaml.vb))
+* [Doctor.cs](./CS/CustomAppointmentBackground/Model/Doctor.cs) (VB: [Doctor.vb](./VB/CustomAppointmentBackground/Model/Doctor.vb))
+* [MedicalAppointment.cs](./CS/CustomAppointmentBackground/Model/MedicalAppointment.cs) (VB: [MedicalAppointment.vb](./VB/CustomAppointmentBackground/Model/MedicalAppointment.vb))
+<!-- default file list end -->
 # How to handle the CustomAppointmentBackground event to change the appointment's background color
 
 
