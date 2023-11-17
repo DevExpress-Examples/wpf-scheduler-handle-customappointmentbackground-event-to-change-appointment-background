@@ -1,43 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using DevExpress.Xpf.Core;
+﻿using DevExpress.Xpf.Core;
 using DevExpress.Xpf.Scheduling;
 using DevExpress.XtraScheduler;
+using System.Windows.Media;
 
-namespace CustomAppointmentBackground
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : DXWindow
-    {
-        public MainWindow()
-        {
+namespace CustomAppointmentBackground {
+    public partial class MainWindow : ThemedWindow {
+        public MainWindow() {
             InitializeComponent();
         }
-
-        #region #CustomAppointmentBackground
-        private void SchedulerControl_CustomAppointmentBackground(object sender, CustomAppointmentBackgroundEventArgs e)
-        {
-            //Change the recurrent appointments' background to blanched almond color,
-            //and other appointments - to rosy brown 
+        private void SchedulerControl_CustomAppointmentBackground(object sender, CustomAppointmentBackgroundEventArgs e) {
+            //Change the recurrent appointment background to blanched almond color,
+            //and background of other appointments - to rosy brown:
             e.Background = (e.AppointmentItem.Type == AppointmentType.Occurrence) ?
             new SolidColorBrush(Colors.BlanchedAlmond) : new SolidColorBrush(Colors.RosyBrown);
 
-            //Change all-day appointments' background:
+            //Change the all-day appointment background:
             e.Background = (e.AppointmentItem.AllDay == true) ? new SolidColorBrush(Colors.Tomato) : e.Background;
         }
-        #endregion #CustomAppointmentBackground
     }
 }

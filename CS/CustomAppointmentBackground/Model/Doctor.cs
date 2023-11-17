@@ -1,8 +1,6 @@
-﻿#region #resource
-using DevExpress.Mvvm.POCO;
+﻿using DevExpress.Mvvm.POCO;
 
-namespace CustomAppointmentBackground
-{
+namespace CustomAppointmentBackground {
     public class Doctor {
         public static Doctor Create() {
             return ViewModelSource.Create(() => new Doctor());
@@ -20,4 +18,3 @@ namespace CustomAppointmentBackground
         public virtual string Name { get; set; }
     }
 }
-#endregion #resource
